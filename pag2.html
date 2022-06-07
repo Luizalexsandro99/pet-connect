@@ -14,17 +14,17 @@
     <div id="principal">
         <div class="form-group"> <!--Define a div como grupo-->
             <label class="nome">Nome</label>
-            <input class="form-control" type="text" id="usuario" placeholder="Seu nome"> 
+            <input class="form-control" type="text" id="usuario" placeholder="Seu nome" required > 
         </div>
 
         <div class="form-group"> <!--Define a div como grupo-->
             <label class="sobrenome">Sobrenome</label>
-            <input class="form-control" type="text" id="sobrenome" placeholder="Seu nome"> 
+            <input class="form-control" type="text" id="sobrenome" placeholder="Seu nome" required > 
         </div>
 
         <div class="form-gorup" > 
             <label class="email" for="email">Email</label>
-            <input class="form-control" type="email" id="email" placeholder="Digite seu email" >
+            <input class="form-control" type="email" id="email" placeholder="Digite seu email" required  >
             <small class="form-text validado">Email será validado</small>
         </div>
 
@@ -32,14 +32,19 @@
             <div class="input-group-prepend arroba">
                 <span class="input-group-text">(81)</span>
             </div>
-            <input class="inputEmail" type="text" placeholder="9-9999-9999">
+            <input class="inputEmail" type="number" placeholder="9-9999-9999" required >
         </div> 
 
-        <a href="pag3.html"><button class="butao">Create account</button></a>
+        <div>
+            <input type="checkbox" id="termos" required >
+            <p class="aoCriar">Ao criar uma conta você concorda com os nossos <a href="#">termos de uso e politicas de privacidade</a></p>
+        </div>
+
+        <!-- <a href="pag3.html"><button class="butao">Create account</button></a> -->
+
+        <a href="pag3.html" class="linkado">Create account</a> 
     </form>
 
     </div>
-
-
 </body>
 </html>
